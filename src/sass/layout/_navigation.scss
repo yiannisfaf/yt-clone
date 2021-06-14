@@ -1,0 +1,29 @@
+.navigation {
+  //Menu button is a checkbox with a div over it
+  &__checkbox {
+    display: none;
+  }
+
+  //white circle for menu
+  &__button {
+    background-color: $color-primary;
+    height: 3.25rem;
+    width: 3.25rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    text-align: center;
+    cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
+  }
+}

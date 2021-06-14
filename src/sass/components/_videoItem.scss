@@ -1,0 +1,36 @@
+.video-item {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin: 2rem 1rem;
+  width: 34rem;
+  text-decoration: none;
+
+  &__image {
+    width: 34rem;
+    height: 20rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-break: break-all;
+    margin-top: 0.5rem;
+
+    &__title {
+      font-size: 1.4rem;
+      color: $color-black;
+    }
+
+    &__channel {
+      color: $color-grey-dark;
+      font-size: 1.3rem;
+    }
+
+    &__stats {
+      color: $color-grey-dark;
+      font-size: 1.3rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+//Order of imports is very important!
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/search';
+@import 'components/signin';
+@import 'components/videoItem';
+@import 'components/videoPlayer';
+
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/sidebar';
+@import 'layout/videoHome';

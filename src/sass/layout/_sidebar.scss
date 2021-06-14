@@ -1,0 +1,84 @@
+.sidebar {
+  flex: 18% 0 0; //18% is width of flex item = sidebar
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__item {
+    position: relative;
+    text-decoration: none;
+    width: 80%;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: $color-grey-light-2;
+    transform: scaleY(0);
+    transition: transform 0.2s,
+      width 0.4s cubic-bezier(1, 0, 0, 1) background-color 0.1s;
+  }
+
+  &__item:hover::before,
+  &__item--active::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
+  &__item:active::before {
+    background-color: $color-grey-light-2;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $color-grey-dark;
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-home {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 2rem;
+    fill: $color-grey-dark;
+
+    @if (&__item: active) {
+      fill: red;
+    }
+  }
+
+  &__divider {
+    display: flex;
+    width: 100%;
+    margin-top: 10rem;
+    border-bottom: 1px solid $color-grey-dark;
+    margin-bottom: 2rem;
+
+    &__title {
+      color: inherit;
+      text-transform: uppercase;
+    }
+  }
+}

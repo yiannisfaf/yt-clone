@@ -1,0 +1,34 @@
+.container {
+  min-height: 50rem;
+}
+
+.container-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-left: 3rem;
+  width: 5rem;
+  height: 3rem;
+
+  &__title {
+    color: $color-black;
+    font-weight: 700;
+    flex: 1;
+    margin-left: 0.5rem;
+  }
+}
+
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: 1px solid $color-grey-light-2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,22 @@
+.signin {
+  &__button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: blue;
+    background-color: #fff;
+    outline: 1.5px solid blue;
+    outline-offset: 4px;
+    white-space: normal;
+    padding: 0.5rem 2rem;
+    margin-right: 3rem;
+  }
+
+  &__icon {
+    margin-left: 0.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
